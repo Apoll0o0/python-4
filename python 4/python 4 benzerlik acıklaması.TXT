@@ -1,0 +1,26 @@
+1.İlk adımda, kelime_frekanslarını_hesapla fonksiyonu, bir metindeki her kelimenin frekansını hesaplar. 
+Bu fonksiyon, metindeki her kelimeyi küçük harfe dönüştürerek, büyük-küçük harf duyarlılığını ortadan kaldırır. 
+Ardından, her kelimenin frekansını bir sözlükte saklar. 
+Örneğin, "Bu bir deneme metnidir." gibi bir metindeki frekanslar şöyle olabilir: {"bu": 1, "bir": 1, "deneme": 1, "metnidir.": 1}.
+
+2.benzerlik_oranını_hesapla fonksiyonu, iki metnin benzerlik oranını hesaplamak için kullanılır. 
+Bu fonksiyon, öncelikle her iki metindeki kelime frekanslarını hesaplar. 
+Daha sonra, her iki metinde de bulunan kelimelerin frekanslarını karşılaştırır. 
+Eğer bir kelime her iki metinde de varsa, bu kelimenin frekans farkını hesaplar ve toplam farka ekler. 
+Eğer bir kelime sadece bir metinde varsa, bu kelimenin frekansını toplam farka ekler. 
+Son olarak, toplam farkı, toplam kelime sayısına bölerek benzerlik oranını bulur.
+Örneğin, iki metin şöyle olsun:
+
+Metin 1: "Bu bir örnek metindir."
+
+Metin 2: "Bu bir test metnidir."
+
+Bu metinlerde ortak kelimeler "bu", "bir" ve "metindir". Her bir kelimenin frekans farkını hesaplayarak toplam farkı buluruz:
+
+Toplam fark = |(1-1)| + |(1-1)| + |(1-1)| + |0-1| = 1
+
+Toplam kelime sayısı = 4 + 4 = 8
+
+Benzerlik oranı = 1 - (1 / 8) = 0.875
+
+Bu şekilde, metinler arasındaki benzerlik oranı hesaplanır ve kullanıcıya sunulur
